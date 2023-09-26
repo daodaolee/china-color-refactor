@@ -1,0 +1,47 @@
+@import './reset.less';
+
+@font-face {
+  font-family: "FangZhengFangSong-GBK-1";
+  src:
+    url("../assets/font/FangZhengFangSong-GBK-1.woff") format("woff"),
+    url("../assets/font/FangZhengFangSong-GBK-1.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'FangZhengFangSong-GBK-1', serif;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+// 滚动条消失
+.scrollbar-hide() {
+  &::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 0px;
+  }
+}
